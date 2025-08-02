@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Nata+Sans:wght@100..900&display=swap');
+*{font-size:1.5vw;
+  margin: auto;text-align: center;background-color:  #F1F0EE;}
+.container{
+  display: flex;
+  color:#FFFFFF;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0  0px 10vh #FFD6DA;
+  align-items: center;
+  border-radius: 5vh;
+  border:  2px solid #F4B2B0;
+  height: 50vh;
+  width: 50vh;
+}
+button{
+  border-radius: 5vh;
+  font-family: monospace;
+  color:#FFFFFF;
+  background-color:  #32324E;
+  border:  2px solid rgba(219, 108, 108, 0.747);
+  height: 7vh;
+}
+button:hover{
+   border: 2px solid #46468A;
+}
+input,textarea{
+  border-radius: 5vh;
+  background-color: #EAF6FF;
+  border:  2px solid #AAAAAA;
+  height: 7vh;
+  Color: #32324E;
+  resize: none;
+  user-select: none;
+  font-family: "JetBrains Mono";
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal; /* Hides both horizontal and vertical scrollbars */
+}
+input,textarea::placeholder{
+  color:#AAAAAA;
+  user-select: none;
+}
+textarea::webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+ textarea{border-radius: 5vh;
+  background-color: #EAF6FF;
+  border:  2px solid #AAAAAA;
+  height: 7vh;
+  width:45vh;
+  Color: #32324E;
+  resize: none;
+  user-select: none;
+  font-family: "JetBrains Mono";
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal; 
+  overflow: auto; /* Enable scrolling */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+ }
