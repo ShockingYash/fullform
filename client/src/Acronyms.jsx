@@ -13,7 +13,7 @@ export default function Acronyms(){
 
     const getAcronyms = () => {
         setFullForm("");
-        const url = "http://localhost:9000/get";
+        const url = import.meta.env.VITE_acronyms;
         axios.get(url)
         .then(res =>{
             setAcronym(res.data[0].acronym);
@@ -26,7 +26,7 @@ export default function Acronyms(){
     const getFullForm = (event) => {
         event.preventDefault();
         const data = {id:search}
-        const url = "http://localhost:9000/form?id="+search;
+        const url = import.meta.env.VITE_fullform+search;
         axios.get(url,data)
         .then(res =>{
             setFullForm(res.data[0].full_form);
